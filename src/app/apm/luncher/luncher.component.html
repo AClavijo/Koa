@@ -1,0 +1,7 @@
+<div fxLayout="column" fxLayoutAlign="center center" class="luncher-box">
+  <div>
+    {{_kD}}
+  </div>
+  <button md-raised-button color="primary" (click)="lunchKeyboardEngine()" *ngIf="!_kL$">Lunch Keyboard Core</button>
+  <button md-raised-button color="accent" (click)="stopKeyboardEngine()" *ngIf="_kL$">Stop Keyboard Core</button>
+</div>
