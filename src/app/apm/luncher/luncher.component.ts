@@ -24,11 +24,7 @@ export class LuncherComponent implements OnInit {
 
   lunchKeyboardEngine() {
     this._kL$ = this._kE.lunchEngine().subscribe(keys => {
-      if (keys) {
-        this._kD = keys.code;
-      } else {
-        this._kD = keys;
-      }
+      console.log(keys);
     });
   }
 
