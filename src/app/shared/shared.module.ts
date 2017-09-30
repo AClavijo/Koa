@@ -6,10 +6,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   imports: [
-    CommonModule,
-    BrowserAnimationsModule,
-    ApmMaterialModule,
-    FlexLayoutModule
+    CommonModule
   ],
   declarations: [],
   exports: [

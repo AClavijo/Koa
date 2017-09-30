@@ -6,7 +6,7 @@ export class TimerEngineService {
 
   constructor() { }
 
-  getTimer(): Observable<any> {
+  startTimer(): Observable<any> {
     return Observable.timer(0, 1000);
   }
 

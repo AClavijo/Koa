@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable, KeyboardEngineService } from '../../core';
+import { Observable, ApmTestService } from '../../core';
 
 @Component({
   selector: 'app-luncher',
@@ -7,31 +7,22 @@ import { Observable, KeyboardEngineService } from '../../core';
   styleUrls: ['./luncher.component.css']
 })
 export class LuncherComponent implements OnInit {
-
-  /**
-   * Keyboard Listener Reference
-   */
-  private _kL$ = null;
   /**
    * Key combinaison to display
    */
   private _kD;
 
-  constructor(private _kE: KeyboardEngineService) { }
+  constructor(private _apmTS: ApmTestService ) { }
 
   ngOnInit() {
   }
 
   lunchKeyboardEngine() {
-    this._kL$ = this._kE.lunchEngine().subscribe(keys => {
-      console.log(keys);
-    });
+    this._apmTS.lunchTest();
   }
 
   stopKeyboardEngine() {
-    this._kL$.unsubscribe();
-    this._kD = null;
-    this._kL$ = null;
+    this._apmTS.stopTest();
   }
 
 }

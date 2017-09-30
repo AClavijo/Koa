@@ -3,8 +3,16 @@ import { Observable } from '../rxjs';
 
 @Injectable()
 export class KeyboardEngineService {
+
   lunchEngine(): Observable<any> {
+    /**
+     * @Observable fromEvent
+     */
     const keyDowns = Observable.fromEvent(document, 'keydown');
+
+    /**
+     * @Observable fromEvent
+     */
     const keyUps = Observable.fromEvent(document, 'keyup');
 
     return keyDowns

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { KeyboardEngineService, TimerEngineService } from './engine';
+import { ApmTestService } from './apm-test';
 
 @NgModule({
   imports: [
@@ -9,7 +10,8 @@ import { KeyboardEngineService, TimerEngineService } from './engine';
   declarations: [],
   providers: [
     KeyboardEngineService,
-    TimerEngineService
+    TimerEngineService,
+    ApmTestService
   ]
 })
 export class CoreModule { }
