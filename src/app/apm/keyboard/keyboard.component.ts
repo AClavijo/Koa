@@ -22,17 +22,25 @@ export class KeyboardComponent implements OnInit {
 
   ngOnInit() {
     this.ApmTS.getKea().subscribe((keys: KeyboardEvent[]) => {
-      keys.map((key: KeyboardEvent) => {
-        
-      });
-
-      /*this.keyboard = this.keyboard.reduce((a, b) => {
-        b.color = (key[0] && b.key === key[0].key) ? 'lightgreen' : 'lightblue';
-
-        a.push(b);
-
-        return a;
-      }, []);*/
+      const keysAcc = [];
+      if (keys.length > 0) {
+        keys.map((key: KeyboardEvent) => {
+          this.keyboard.map((x, idx) => {
+            if (x.key === key.key) {
+              keysAcc.push(x);
+              this.keyboard[idx].color = 'lightgreen';
+            } else {
+              if (!keysAcc.find(e => x.key === e.key)) {
+                this.keyboard[idx].color = 'lightblue';
+              }
+            }
+          });
+        });
+      } else {
+        this.keyboard.map((x, idx) => {
+          this.keyboard[idx].color = 'lightblue';
+        });
+      }
     });
   }
 
