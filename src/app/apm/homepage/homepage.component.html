@@ -1,16 +1,16 @@
 
-<md-sidenav-container>
-  <md-sidenav color="primary" #apm_sidenav>
+<mat-sidenav-container>
+  <mat-sidenav color="primary" #apm_sidenav>
     Kings of APM
-  </md-sidenav>
-  <md-toolbar color="primary">
-    <button md-icon-button (click)="apm_sidenav.open()">
-        <md-icon >reorder</md-icon>
+  </mat-sidenav>
+  <mat-toolbar color="primary">
+    <button mat-icon-button (click)="apm_sidenav.open()">
+        <mat-icon >reorder</mat-icon>
     </button>
     <span class="toolbar__title">Kings of APM</span>
-  </md-toolbar>
+  </mat-toolbar>
   <div class="apm__content">
       <app-luncher></app-luncher>
       <app-keyboard></app-keyboard>
   </div>
-</md-sidenav-container>
+</mat-sidenav-container>

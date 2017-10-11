@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MdIconModule, MdButtonModule, MdGridListModule } from '@angular/material';
+import { MatIconModule, MatButtonModule, MatGridListModule } from '@angular/material';
 
 @NgModule({
   imports: [],
   declarations: [],
   exports: [
-    MdIconModule,
-    MdButtonModule,
-    MdGridListModule
+    MatIconModule,
+    MatButtonModule,
+    MatGridListModule
   ]
 })
 export class ApmMaterialModule { }

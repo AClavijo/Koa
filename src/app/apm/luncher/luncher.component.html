@@ -2,8 +2,8 @@
   <div>
     {{_kD}}
   </div>
-  <button md-raised-button color="primary" (click)="lunchKeyboardEngine()" *ngIf="!_apmTS.runningTest; else stop_button">Lunch Keyboard Core</button>
+  <button mat-raised-button color="primary" (click)="lunchKeyboardEngine()" *ngIf="!_apmTS.runningTest; else stop_button">Lunch Keyboard Core</button>
   <ng-template #stop_button>
-    <button md-raised-button color="accent" (click)="stopKeyboardEngine()">Stop Keyboard Core</button>
+    <button mat-raised-button color="accent" (click)="stopKeyboardEngine()">Stop Keyboard Core</button>
   </ng-template>
 </div>
