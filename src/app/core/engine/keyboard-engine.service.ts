@@ -21,12 +21,12 @@ export class KeyboardEngineService {
       .map(group => group.distinctUntilChanged(null, (e: KeyboardEvent) => e.type))
       .mergeAll()
       .scan((x: Array<KeyboardEvent>, y: KeyboardEvent) => {
-        return (!x.length) ? x.concat(y) : (x.find((val, i) => {
+        return (!x.length || !x.find((val, i) => {
           if (val.code === y.code) {
             x.splice(i, 1);
             return true;
           }
-        }, false)) ? x : x.concat(y);
+        }, false)) ? x.concat(y) : x ;
       }, []).share();
   }
 }
