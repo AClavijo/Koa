@@ -2,5 +2,21 @@
     margin: 0px 15px;
 }
 mat-sidenav {
-    width: 200px;
+    width: 350px;
+}
+.mat-sidenav__title {
+    background-color: lightslategray;
+    font-size: 1.2em;
+    padding: 1.5em;
+}
+.test-list-box__section-title {
+    background-color: lightcoral;
+    padding: 1.5em;
+    font-size: 1em;
+}
+.test-lis-box__section-content {
+    padding: 0.4em;
+}
+mat-card{
+    margin: 0.5em 0;
 }
