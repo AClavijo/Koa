@@ -1,16 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Observable, ApmTestService } from '../../../core';
 
 @Component({
   selector: 'app-apm-keyboard',
   templateUrl: './keyboard.component.html',
-  styleUrls: ['./keyboard.component.css']
+  styleUrls: ['./keyboard.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class KeyboardComponent {
-
-  private KeyEvent$: Observable<any>;
-
-  constructor() { }
-
-  @Input() Keyboard;
+  @Input() keyboard;
 }

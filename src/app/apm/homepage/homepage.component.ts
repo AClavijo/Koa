@@ -14,6 +14,7 @@ export class HomepageComponent implements OnInit {
   ngOnInit() {
     this._store.select('bo').subscribe(bo => console.log(bo));
     this._store.dispatch({type: KEY_ACTIONS.GRID_CONFIG});
+    this._store.dispatch({type: KEY_ACTIONS.GRID_CONFIG});
   }
 
   test(event: any) {

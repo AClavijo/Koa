@@ -8,8 +8,11 @@ import { ApmState, ApmTestService } from '../../../core';
   styleUrls: ['./exercice.component.css']
 })
 export class ExerciceComponent implements OnInit {
+  private _keyboard;
 
-  constructor(private _store: Store<ApmState>, private _apmT: ApmTestService) { }
+  constructor(private _store: Store<ApmState>, private _apmT: ApmTestService) {
+    this._keyboard = this._store.select('keyboard');
+  }
 
   ngOnInit() { }
 
