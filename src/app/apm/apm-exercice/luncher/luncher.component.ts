@@ -1,28 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-import { Subscription, Observable, ApmTestService } from '../../../core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-apm-luncher',
   templateUrl: './luncher.component.html',
   styleUrls: ['./luncher.component.css']
 })
-export class LuncherComponent implements OnInit {
+export class LuncherComponent {
   /**
    * Key combinaison to display
    */
-  _kD: Subscription;
+  private trigger = false;
+  @Output() isTrigger = new EventEmitter();
 
-  constructor(public _apmTS: ApmTestService ) { }
-
-  ngOnInit() {
-  }
+  constructor() { }
 
   lunchKeyboardEngine() {
-    this._apmTS.lunchTest();
+    this.isTrigger.emit(this.trigger = !this.trigger);
   }
-
-  stopKeyboardEngine() {
-    this._apmTS.stopTest();
-  }
-
 }

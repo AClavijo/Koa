@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { BO_ACTIONS, ApmState } from '../../core';
+import { BO_ACTIONS, KEY_ACTIONS, ApmState } from '../../core';
 
 @Component({
   selector: 'app-homepage',
@@ -9,10 +9,11 @@ import { BO_ACTIONS, ApmState } from '../../core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor(private store: Store<ApmState>) { }
+  constructor(private _store: Store<ApmState>) { }
 
   ngOnInit() {
-    this.store.select('bo').subscribe(bo => console.log(bo));
+    this._store.select('bo').subscribe(bo => console.log(bo));
+    this._store.dispatch({type: KEY_ACTIONS.GRID_CONFIG});
   }
 
   test(event: any) {
@@ -20,6 +21,6 @@ export class HomepageComponent implements OnInit {
   }
 
   selectBo() {
-    this.store.dispatch({type: BO_ACTIONS.BO_ADD});
+    this._store.dispatch({type: BO_ACTIONS.BO_ADD});
   }
 }

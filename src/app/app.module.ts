@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core';
 import { ApmModule } from './apm';
 import { StoreModule } from '@ngrx/store';
-import { boReducer } from './core';
+import { BoReducer, KeyboardReducer } from './core';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { boReducer } from './core';
   imports: [
     BrowserModule,
     StoreModule.forRoot({
-      bo: boReducer
+      bo: BoReducer,
+      keyboard: KeyboardReducer
     }),
     CoreModule,
     ApmModule

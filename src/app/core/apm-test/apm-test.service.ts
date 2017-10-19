@@ -37,13 +37,13 @@ export class ApmTestService implements ApmTestInterface {
     });
     this._timer$ = this._tS.startTimer().subscribe(res => {
     });
-    this.runningTest = true;
+    this.runningTest = !this.runningTest;
   }
 
   stopTest() {
     this._kL$.unsubscribe();
     this._timer$.unsubscribe();
-    this.runningTest = false;
+    this.runningTest = !this.runningTest;
   }
 
   getKeyboardEvent() {

@@ -1,9 +1,6 @@
 <div fxLayout="column" fxLayoutAlign="center center" class="luncher-box">
-  <div>
-    {{_kD}}
-  </div>
-  <button mat-raised-button color="primary" (click)="lunchKeyboardEngine()" *ngIf="!_apmTS.runningTest; else stop_button">Lunch Keyboard Core</button>
+  <button mat-raised-button color="primary" (click)="lunchKeyboardEngine()" *ngIf="!trigger; else stop_button">Lunch Keyboard Core</button>
   <ng-template #stop_button>
-    <button mat-raised-button color="accent" (click)="stopKeyboardEngine()">Stop Keyboard Core</button>
+    <button mat-raised-button color="accent" (click)="lunchKeyboardEngine()">Stop Keyboard Core</button>
   </ng-template>
 </div>
