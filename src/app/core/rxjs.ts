@@ -1,1 +1,1 @@
-export { Observable, Subject } from 'rxjs';
+export { Observable, Subject, Subscription } from 'rxjs';

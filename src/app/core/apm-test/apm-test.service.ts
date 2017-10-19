@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from '../rxjs';
+import { Observable, Subject, Subscription } from '../rxjs';
 import { KeyboardEngineService, TimerEngineService } from '../engine';
 
 interface ApmTestInterface {
-  runningTest;
-  lunchTest();
+  runningTest: any;
+  lunchTest(): void;
 }
 
 @Injectable()
@@ -13,21 +13,19 @@ export class ApmTestService implements ApmTestInterface {
   /**
    * Keyboard Event Reference
    */
-  private _kL$ = null;
-
-  private KeyB;
+  private _kL$: Subscription|null = null;
 
   /**
    * Timer Event Reference
    */
-  private _timer$;
+  private _timer$: Subscription;
 
   private kea: Subject<any>;
 
   /**
    * True if a test is running otherwise False
    */
-  runningTest = false;
+  runningTest: any = false;
 
   constructor(private _keS: KeyboardEngineService, private _tS: TimerEngineService) {
     this.kea = new Subject();

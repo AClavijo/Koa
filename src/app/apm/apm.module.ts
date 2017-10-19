@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared';
 import { HomepageComponent } from './homepage/homepage.component';
-import { LuncherComponent } from './luncher/luncher.component';
-import { KeyboardComponent } from './keyboard/keyboard.component';
+import { ApmExerciceModule } from './apm-exercice';
 
 @NgModule({
   imports: [
     SharedModule,
+    ApmExerciceModule
   ],
-  declarations: [HomepageComponent, LuncherComponent, KeyboardComponent],
+  declarations: [HomepageComponent],
   exports: [HomepageComponent]
 })
 export class ApmModule { }

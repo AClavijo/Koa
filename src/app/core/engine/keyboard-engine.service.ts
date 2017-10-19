@@ -26,7 +26,7 @@ export class KeyboardEngineService {
             x.splice(i, 1);
             return true;
           }
-        }, false)) ? x.concat(y) : x ;
+        }, false)) ? x.concat(y) : x;
       }, []).share();
   }
 }

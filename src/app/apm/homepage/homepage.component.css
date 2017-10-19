@@ -20,3 +20,6 @@ mat-sidenav {
 mat-card{
     margin: 0.5em 0;
 }
+.search-bo, .test-list-box__section-content{
+    padding: 20px;
+}
