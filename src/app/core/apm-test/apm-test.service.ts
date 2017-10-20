@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject, Subscription } from '../rxjs';
+import { Observable, BehaviorSubject, Subscription } from '../rxjs';
 import { KeyboardEngineService, TimerEngineService } from '../engine';
 
 interface ApmTestInterface {
@@ -23,7 +23,7 @@ export class ApmTestService implements ApmTestInterface {
   /**
    * Keys actions
    */
-  private kea: Subject<any>;
+  private kea: BehaviorSubject<any>;
 
   /**
    * True if a test is running otherwise False
@@ -31,10 +31,10 @@ export class ApmTestService implements ApmTestInterface {
   runningTest: any = false;
 
   constructor(private _keS: KeyboardEngineService, private _tS: TimerEngineService) {
-    this.kea = new Subject();
+    this.kea = new BehaviorSubject([]);
   }
 
-  lunchTest(): [Subject<any>, Subscription] {
+  lunchTest(): [BehaviorSubject<any>, Subscription] {
     this._kL$ = this._keS.lunchEngine().subscribe(res => {
       this.kea.next(res);
     });
@@ -58,7 +58,7 @@ export class ApmTestService implements ApmTestInterface {
     return this._timer$;
   }
 
-  getKea(): Subject<any> {
+  getKea(): BehaviorSubject<any> {
     return this.kea;
   }
 
