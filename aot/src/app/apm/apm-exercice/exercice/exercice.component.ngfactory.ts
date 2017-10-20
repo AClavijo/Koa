@@ -8,37 +8,48 @@
 
 import * as i0 from './exercice.component.css.shim.ngstyle';
 import * as i1 from '@angular/core';
-import * as i2 from '../luncher/luncher.component.ngfactory';
-import * as i3 from '../../../../../../src/app/apm/apm-exercice/luncher/luncher.component';
-import * as i4 from '../../../../../../src/app/core/apm-test/apm-test.service';
+import * as i2 from '../../../../../../src/app/apm/apm-exercice/exercice/exercice.component';
+import * as i3 from '../luncher/luncher.component.ngfactory';
+import * as i4 from '../../../../../../src/app/apm/apm-exercice/luncher/luncher.component';
 import * as i5 from '../keyboard/keyboard.component.ngfactory';
 import * as i6 from '../../../../../../src/app/apm/apm-exercice/keyboard/keyboard.component';
-import * as i7 from '../../../../../../src/app/apm/apm-exercice/exercice/exercice.component';
+import * as i7 from '@angular/common';
+import * as i8 from '@ngrx/store';
+import * as i9 from '../../../../../../src/app/core/apm-test/apm-test.service';
 const styles_ExerciceComponent:any[] = [i0.styles];
 export const RenderType_ExerciceComponent:i1.RendererType2 = i1.ɵcrt({encapsulation:0,
     styles:styles_ExerciceComponent,data:{}});
 export function View_ExerciceComponent_0(_l:any):i1.ɵViewDefinition {
   return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,0,(null as any),(null as any),1,'app-apm-luncher',
-      ([] as any[]),(null as any),(null as any),(null as any),i2.View_LuncherComponent_0,
-      i2.RenderType_LuncherComponent)),i1.ɵdid(1,114688,(null as any),0,i3.LuncherComponent,
-      [i4.ApmTestService],(null as any),(null as any)),(_l()(),i1.ɵted(-1,(null as any),
-      ['\n'])),(_l()(),i1.ɵeld(3,0,(null as any),(null as any),1,'app-apm-keyboard',
-      ([] as any[]),(null as any),(null as any),(null as any),i5.View_KeyboardComponent_0,
-      i5.RenderType_KeyboardComponent)),i1.ɵdid(4,114688,(null as any),0,i6.KeyboardComponent,
-      [i4.ApmTestService],(null as any),(null as any)),(_l()(),i1.ɵted(-1,(null as any),
-      ['\n']))],(_ck,_v) => {
-    _ck(_v,1,0);
-    _ck(_v,4,0);
+      ([] as any[]),(null as any),[[(null as any),'isTrigger']],(_v,en,$event) => {
+        var ad:boolean = true;
+        var _co:i2.ExerciceComponent = _v.component;
+        if (('isTrigger' === en)) {
+          const pd_0:any = ((<any>_co.triggerTest($event)) !== false);
+          ad = (pd_0 && ad);
+        }
+        return ad;
+      },i3.View_LuncherComponent_0,i3.RenderType_LuncherComponent)),i1.ɵdid(1,49152,
+      (null as any),0,i4.LuncherComponent,([] as any[]),(null as any),{isTrigger:'isTrigger'}),
+      (_l()(),i1.ɵted(-1,(null as any),['\n'])),(_l()(),i1.ɵeld(3,0,(null as any),
+          (null as any),3,'app-apm-keyboard',([] as any[]),(null as any),(null as any),
+          (null as any),i5.View_KeyboardComponent_0,i5.RenderType_KeyboardComponent)),
+      i1.ɵdid(4,573440,(null as any),0,i6.KeyboardComponent,([] as any[]),{keyboard:[0,
+          'keyboard'],keys:[1,'keys']},(null as any)),i1.ɵpid(131072,i7.AsyncPipe,
+          [i1.ChangeDetectorRef]),i1.ɵpid(131072,i7.AsyncPipe,[i1.ChangeDetectorRef]),
+      (_l()(),i1.ɵted(-1,(null as any),['\n']))],(_ck,_v) => {
+    var _co:i2.ExerciceComponent = _v.component;
+    const currVal_0:any = i1.ɵunv(_v,4,0,i1.ɵnov(_v,5).transform(_co._keyboard));
+    const currVal_1:any = i1.ɵunv(_v,4,1,i1.ɵnov(_v,6).transform(_co.kea));
+    _ck(_v,4,0,currVal_0,currVal_1);
   },(null as any));
 }
 export function View_ExerciceComponent_Host_0(_l:any):i1.ɵViewDefinition {
   return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,0,(null as any),(null as any),1,'app-apm-exercice',
       ([] as any[]),(null as any),(null as any),(null as any),View_ExerciceComponent_0,
-      RenderType_ExerciceComponent)),i1.ɵdid(1,114688,(null as any),0,i7.ExerciceComponent,
-      ([] as any[]),(null as any),(null as any))],(_ck,_v) => {
-    _ck(_v,1,0);
-  },(null as any));
+      RenderType_ExerciceComponent)),i1.ɵdid(1,49152,(null as any),0,i2.ExerciceComponent,
+      [i8.Store,i9.ApmTestService],(null as any),(null as any))],(null as any),(null as any));
 }
-export const ExerciceComponentNgFactory:i1.ComponentFactory<i7.ExerciceComponent> = i1.ɵccf('app-apm-exercice',
-    i7.ExerciceComponent,View_ExerciceComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL3Zhci93d3cvYXBtL3NyYy9hcHAvYXBtL2FwbS1leGVyY2ljZS9leGVyY2ljZS9leGVyY2ljZS5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vdmFyL3d3dy9hcG0vc3JjL2FwcC9hcG0vYXBtLWV4ZXJjaWNlL2V4ZXJjaWNlL2V4ZXJjaWNlLmNvbXBvbmVudC50cyIsIm5nOi8vL3Zhci93d3cvYXBtL3NyYy9hcHAvYXBtL2FwbS1leGVyY2ljZS9leGVyY2ljZS9leGVyY2ljZS5jb21wb25lbnQuaHRtbCIsIm5nOi8vL3Zhci93d3cvYXBtL3NyYy9hcHAvYXBtL2FwbS1leGVyY2ljZS9leGVyY2ljZS9leGVyY2ljZS5jb21wb25lbnQudHMuRXhlcmNpY2VDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8YXBwLWFwbS1sdW5jaGVyPjwvYXBwLWFwbS1sdW5jaGVyPlxuPGFwcC1hcG0ta2V5Ym9hcmQ+PC9hcHAtYXBtLWtleWJvYXJkPlxuIiwiPGFwcC1hcG0tZXhlcmNpY2U+PC9hcHAtYXBtLWV4ZXJjaWNlPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O29CQ0FBO01BQUE7b0NBQUEsVUFBQTtNQUFBLGlEQUFtQztNQUFBLFNBQ25DO01BQUE7cUNBQUEsVUFBQTtNQUFBLGlEQUFxQztNQUFBO0lBRHJDO0lBQ0E7Ozs7b0JDREE7TUFBQTtrQ0FBQSxVQUFBO01BQUE7SUFBQTs7OzsifQ==
+export const ExerciceComponentNgFactory:i1.ComponentFactory<i2.ExerciceComponent> = i1.ɵccf('app-apm-exercice',
+    i2.ExerciceComponent,View_ExerciceComponent_Host_0,{},{},([] as any[]));
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL3Zhci93d3cvYXBtL3NyYy9hcHAvYXBtL2FwbS1leGVyY2ljZS9leGVyY2ljZS9leGVyY2ljZS5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vdmFyL3d3dy9hcG0vc3JjL2FwcC9hcG0vYXBtLWV4ZXJjaWNlL2V4ZXJjaWNlL2V4ZXJjaWNlLmNvbXBvbmVudC50cyIsIm5nOi8vL3Zhci93d3cvYXBtL3NyYy9hcHAvYXBtL2FwbS1leGVyY2ljZS9leGVyY2ljZS9leGVyY2ljZS5jb21wb25lbnQuaHRtbCIsIm5nOi8vL3Zhci93d3cvYXBtL3NyYy9hcHAvYXBtL2FwbS1leGVyY2ljZS9leGVyY2ljZS9leGVyY2ljZS5jb21wb25lbnQudHMuRXhlcmNpY2VDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8YXBwLWFwbS1sdW5jaGVyXG4gICAgKGlzVHJpZ2dlcik9XCJ0cmlnZ2VyVGVzdCgkZXZlbnQpXCJcbj48L2FwcC1hcG0tbHVuY2hlcj5cbjxhcHAtYXBtLWtleWJvYXJkXG4gICAgW2tleWJvYXJkXT1cIl9rZXlib2FyZCB8IGFzeW5jXCJcbiAgICBba2V5c109XCJrZWEgfCBhc3luY1wiXG4+PC9hcHAtYXBtLWtleWJvYXJkPlxuIiwiPGFwcC1hcG0tZXhlcmNpY2U+PC9hcHAtYXBtLWV4ZXJjaWNlPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTtRQUFBO1FBQUE7UUFDSTtVQUFBO1VBQUE7UUFBQTtRQURKO01BQUEscUVBQUE7TUFBQTtNQUVtQiwwQ0FDbkI7VUFBQTtVQUFBO2FBQUE7VUFBQSxtREFDSTtVQUFBLCtCQUNBO01BQ2dCOztJQUZoQjtJQUNBO0lBRkosV0FDSSxVQUNBLFNBRko7Ozs7b0JDSEE7TUFBQTtrQ0FBQSxVQUFBO01BQUE7OzsifQ==

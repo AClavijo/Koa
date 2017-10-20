@@ -20,6 +20,9 @@ export class ApmTestService implements ApmTestInterface {
    */
   private _timer$: Subscription;
 
+  /**
+   * Keys actions
+   */
   private kea: Subject<any>;
 
   /**
@@ -31,13 +34,14 @@ export class ApmTestService implements ApmTestInterface {
     this.kea = new Subject();
   }
 
-  lunchTest() {
+  lunchTest(): [Subject<any>, Subscription] {
     this._kL$ = this._keS.lunchEngine().subscribe(res => {
       this.kea.next(res);
     });
     this._timer$ = this._tS.startTimer().subscribe(res => {
     });
     this.runningTest = !this.runningTest;
+    return [this.kea, this._timer$];
   }
 
   stopTest() {

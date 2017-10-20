@@ -14,7 +14,6 @@ import * as i4 from '@angular/material/grid-list';
 import * as i5 from '@angular/cdk/bidi';
 import * as i6 from '@angular/common';
 import * as i7 from '../../../../../../src/app/apm/apm-exercice/keyboard/keyboard.component';
-import * as i8 from '../../../../../../src/app/core/apm-test/apm-test.service';
 const styles_KeyboardComponent:any[] = [i0.styles];
 export const RenderType_KeyboardComponent:i1.RendererType2 = i1.ɵcrt({encapsulation:0,
     styles:styles_KeyboardComponent,data:{}});
@@ -37,7 +36,7 @@ function View_KeyboardComponent_1(_l:any):i1.ɵViewDefinition {
       });
 }
 export function View_KeyboardComponent_0(_l:any):i1.ɵViewDefinition {
-  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,0,(null as any),(null as any),7,'mat-grid-list',
+  return i1.ɵvid(2,[(_l()(),i1.ɵeld(0,0,(null as any),(null as any),7,'mat-grid-list',
       [['class','mat-grid-list'],['cols','4'],['rowHeight','100px']],(null as any),
       (null as any),(null as any),i2.View_MatGridList_0,i2.RenderType_MatGridList)),
       i1.ɵdid(1,16384,(null as any),0,i3.MatPrefixRejector,([] as any[]),(null as any),
@@ -59,11 +58,10 @@ export function View_KeyboardComponent_0(_l:any):i1.ɵViewDefinition {
 export function View_KeyboardComponent_Host_0(_l:any):i1.ɵViewDefinition {
   return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,0,(null as any),(null as any),1,'app-apm-keyboard',
       ([] as any[]),(null as any),(null as any),(null as any),View_KeyboardComponent_0,
-      RenderType_KeyboardComponent)),i1.ɵdid(1,114688,(null as any),0,i7.KeyboardComponent,
-      [i8.ApmTestService],(null as any),(null as any))],(_ck,_v) => {
-    _ck(_v,1,0);
-  },(null as any));
+      RenderType_KeyboardComponent)),i1.ɵdid(1,573440,(null as any),0,i7.KeyboardComponent,
+      ([] as any[]),(null as any),(null as any))],(null as any),(null as any));
 }
 export const KeyboardComponentNgFactory:i1.ComponentFactory<i7.KeyboardComponent> = i1.ɵccf('app-apm-keyboard',
-    i7.KeyboardComponent,View_KeyboardComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL3Zhci93d3cvYXBtL3NyYy9hcHAvYXBtL2FwbS1leGVyY2ljZS9rZXlib2FyZC9rZXlib2FyZC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vdmFyL3d3dy9hcG0vc3JjL2FwcC9hcG0vYXBtLWV4ZXJjaWNlL2tleWJvYXJkL2tleWJvYXJkLmNvbXBvbmVudC50cyIsIm5nOi8vL3Zhci93d3cvYXBtL3NyYy9hcHAvYXBtL2FwbS1leGVyY2ljZS9rZXlib2FyZC9rZXlib2FyZC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL3Zhci93d3cvYXBtL3NyYy9hcHAvYXBtL2FwbS1leGVyY2ljZS9rZXlib2FyZC9rZXlib2FyZC5jb21wb25lbnQudHMuS2V5Ym9hcmRDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8bWF0LWdyaWQtbGlzdCBjb2xzPVwiNFwiIHJvd0hlaWdodD1cIjEwMHB4XCI+XG4gIDxtYXQtZ3JpZC10aWxlXG4gICAgICAqbmdGb3I9XCJsZXQga2V5IG9mIGtleWJvYXJkXCJcbiAgICAgIFtjb2xzcGFuXT1cImtleS5jb2xzXCJcbiAgICAgIFtyb3dzcGFuXT1cImtleS5yb3dzXCJcbiAgICAgIFtzdHlsZS5iYWNrZ3JvdW5kXT1cImtleS5jb2xvclwiPlxuICAgIHt7a2V5LnRleHR9fVxuICA8L21hdC1ncmlkLXRpbGU+XG48L21hdC1ncmlkLWxpc3Q+IiwiPGFwcC1hcG0ta2V5Ym9hcmQ+PC9hcHAtYXBtLWtleWJvYXJkPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztvQkNDRTtNQUFBO3FEQUFBLFVBQUE7TUFBQSx5RUFBQTtNQUFBO1VBQUEsc0NBSW1DOztRQUQvQjtRQURBO1FBRkosV0FHSSxVQURBLFNBRko7O1FBSUk7UUFKSixXQUlJLFNBSko7UUFJbUM7UUFBQTs7OztvQkFMckM7TUFBQTtNQUFBO2FBQUE7VUFBQSxzQkFBQTt3QkFBQTtVQUFBLCtDQUEwQztNQUN4QzthQUFBOzRCQUFBLHlDQU1nQjtVQUFBOztJQVBIO0lBQVM7SUFBeEIsV0FBZSxVQUFTLFNBQXhCO0lBRU07SUFESixXQUNJLFNBREo7Ozs7b0JDREY7TUFBQTtrQ0FBQSxVQUFBO01BQUE7SUFBQTs7OzsifQ==
+    i7.KeyboardComponent,View_KeyboardComponent_Host_0,{keyboard:'keyboard',keys:'keys'},
+    {},([] as any[]));
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL3Zhci93d3cvYXBtL3NyYy9hcHAvYXBtL2FwbS1leGVyY2ljZS9rZXlib2FyZC9rZXlib2FyZC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vdmFyL3d3dy9hcG0vc3JjL2FwcC9hcG0vYXBtLWV4ZXJjaWNlL2tleWJvYXJkL2tleWJvYXJkLmNvbXBvbmVudC50cyIsIm5nOi8vL3Zhci93d3cvYXBtL3NyYy9hcHAvYXBtL2FwbS1leGVyY2ljZS9rZXlib2FyZC9rZXlib2FyZC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL3Zhci93d3cvYXBtL3NyYy9hcHAvYXBtL2FwbS1leGVyY2ljZS9rZXlib2FyZC9rZXlib2FyZC5jb21wb25lbnQudHMuS2V5Ym9hcmRDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8bWF0LWdyaWQtbGlzdCBjb2xzPVwiNFwiIHJvd0hlaWdodD1cIjEwMHB4XCI+XG4gIDxtYXQtZ3JpZC10aWxlXG4gICAgICAqbmdGb3I9XCJsZXQga2V5IG9mIGtleWJvYXJkXCJcbiAgICAgIFtjb2xzcGFuXT1cImtleS5jb2xzXCJcbiAgICAgIFtyb3dzcGFuXT1cImtleS5yb3dzXCJcbiAgICAgIFtzdHlsZS5iYWNrZ3JvdW5kXT1cImtleS5jb2xvclwiPlxuICAgIHt7a2V5LnRleHR9fVxuICA8L21hdC1ncmlkLXRpbGU+XG48L21hdC1ncmlkLWxpc3Q+IiwiPGFwcC1hcG0ta2V5Ym9hcmQ+PC9hcHAtYXBtLWtleWJvYXJkPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O29CQ0NFO01BQUE7cURBQUEsVUFBQTtNQUFBLHlFQUFBO01BQUE7VUFBQSxzQ0FJbUM7O1FBRC9CO1FBREE7UUFGSixXQUdJLFVBREEsU0FGSjs7UUFJSTtRQUpKLFdBSUksU0FKSjtRQUltQztRQUFBOzs7O29CQUxyQztNQUFBO01BQUE7YUFBQTtVQUFBLHNCQUFBO3dCQUFBO1VBQUEsK0NBQTBDO01BQ3hDO2FBQUE7NEJBQUEseUNBTWdCO1VBQUE7O0lBUEg7SUFBUztJQUF4QixXQUFlLFVBQVMsU0FBeEI7SUFFTTtJQURKLFdBQ0ksU0FESjs7OztvQkNERjtNQUFBO2tDQUFBLFVBQUE7TUFBQTs7OzsifQ==

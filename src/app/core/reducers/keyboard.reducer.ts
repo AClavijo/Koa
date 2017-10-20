@@ -1,7 +1,7 @@
 import { Action } from '@ngrx/store';
 import { KEY_ACTIONS } from '../actions';
 
-export function KeyboardReducer(state = [], action: Action) {
+export function KeyboardReducer(state: any[] = [], action: Action) {
     switch (action.type) {
         case KEY_ACTIONS.GRID_CONFIG:
             return [

@@ -1,0 +1,1 @@
+{"summaries":[{"symbol":{"__symbol":0,"members":[]},"metadata":{"BO_ADD":"BO_ADD"}},{"symbol":{"__symbol":1,"members":[]},"metadata":{"GRID_CONFIG":"GRID_CONFIG"}}],"symbols":[{"__symbol":0,"name":"BO_ACTIONS","filePath":"/var/www/apm/src/app/core/actions.d.ts"},{"__symbol":1,"name":"KEY_ACTIONS","filePath":"/var/www/apm/src/app/core/actions.d.ts"}]}

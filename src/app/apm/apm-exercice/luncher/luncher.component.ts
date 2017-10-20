@@ -9,7 +9,7 @@ export class LuncherComponent {
   /**
    * Key combinaison to display
    */
-  private trigger = false;
+  trigger: any = false;
   @Output() isTrigger = new EventEmitter();
 
   constructor() { }

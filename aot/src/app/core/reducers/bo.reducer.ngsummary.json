@@ -1,1 +1,1 @@
-{"summaries":[{"symbol":{"__symbol":0,"members":[]},"metadata":{"BO_ADD":"BO_ADD"}},{"symbol":{"__symbol":1,"members":[]},"metadata":{"__symbolic":"function"}}],"symbols":[{"__symbol":0,"name":"BO_ACTIONS","filePath":"/var/www/apm/src/app/core/reducers/bo.reducer.d.ts"},{"__symbol":1,"name":"boReducer","filePath":"/var/www/apm/src/app/core/reducers/bo.reducer.d.ts"}]}
+{"summaries":[{"symbol":{"__symbol":0,"members":[]},"metadata":{"__symbolic":"function"}}],"symbols":[{"__symbol":0,"name":"BoReducer","filePath":"/var/www/apm/src/app/core/reducers/bo.reducer.d.ts"}]}

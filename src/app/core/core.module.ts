@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { KeyboardEngineService, TimerEngineService } from './engine';
 import { ApmTestService } from './apm-test';
+import { KeyboardMappingService } from './keyboard';
 
 @NgModule({
   imports: [
@@ -11,7 +12,8 @@ import { ApmTestService } from './apm-test';
   providers: [
     KeyboardEngineService,
     TimerEngineService,
-    ApmTestService
+    ApmTestService,
+    KeyboardMappingService
   ]
 })
 export class CoreModule { }
